@@ -1,7 +1,7 @@
 # CPPLearning
 ## c plus plus learning <br>
 ****
-* [0 bool type](#0 bool type) <br>
+* [0 bool type](###0 bool type) <br>
 
 
 
