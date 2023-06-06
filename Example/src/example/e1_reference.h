@@ -13,6 +13,7 @@ public:
 	const char* getName();
 
 private:
+	void testRef(int& ref);
 
 };
 #endif // E1
