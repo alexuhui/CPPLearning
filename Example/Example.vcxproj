@@ -128,11 +128,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\example\e0_bool.cpp" />
+    <ClCompile Include="src\example\e1_reference.cpp" />
     <ClCompile Include="src\example\e_base.cpp" />
     <ClCompile Include="src\main\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\example\e0_bool.h" />
+    <ClInclude Include="src\example\e1_reference.h" />
     <ClInclude Include="src\example\e_base.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

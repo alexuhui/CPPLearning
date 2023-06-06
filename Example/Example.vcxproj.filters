@@ -30,12 +30,18 @@
     <ClCompile Include="src\example\e_base.cpp">
       <Filter>源文件\example</Filter>
     </ClCompile>
+    <ClCompile Include="src\example\e1_reference.cpp">
+      <Filter>源文件\example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\example\e0_bool.h">
       <Filter>源文件\example</Filter>
     </ClInclude>
     <ClInclude Include="src\example\e_base.h">
+      <Filter>源文件\example</Filter>
+    </ClInclude>
+    <ClInclude Include="src\example\e1_reference.h">
       <Filter>源文件\example</Filter>
     </ClInclude>
   </ItemGroup>

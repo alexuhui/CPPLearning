@@ -1,13 +1,16 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 #include "../example/e0_bool.h"
+#include "../example/e1_reference.h"
 
 
 template <class T>
 int getArrayLen(T& array)
 {
+	//cout << "sizeof(array) : " << sizeof(array) << "  sizeof(array[0]) : " << sizeof(array[0]) << endl;
 	return (sizeof(array) / sizeof(array[0]));
 }
 
@@ -15,15 +18,28 @@ int main()
 {
 	printf("hello c plus plus\n\n");
 	int ex;
+	string str = "0";
 	IEBase* exObjs[] = {
 			 new E0_bool(),
+			 new E1_ref(),
 	};
+	int len = getArrayLen(exObjs);
 	while (true)
 	{
 		printf("input number to run example (input -1 to show all example) : ");
-		cin >> ex;
+		cin >> str;
 
-		int len = getArrayLen(exObjs);
+		char first = str[0];
+		if (first == '-')
+			first = str[1];
+		if (first < '0' || first > '9')
+		{
+			printf("string %s can not convert to int. \n", str.c_str());
+			continue;
+		}
+			
+		ex = stoi(str);
+
 		if (ex == -1)
 		{
 			printf("all example list : \n");
