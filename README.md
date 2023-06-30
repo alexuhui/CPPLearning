@@ -1,11 +1,18 @@
 # CPPLearning
 ## c plus plus learning <br>
 ****
+* [前言](#前言) <br>
 * [0. bool type](#0-bool-type) <br>
 * [1. reference](#1-reference) <br>
 
 
 * [plan](#plan) <br>
+
+### 前言
+1、附加引用项配置<br>
+当需要用到别的库的时候，需要配置引用项。<br>
+如图：需要注意对应的配置和平台。例如，只配置了Debug，Release是找不到引用的。平台位数不对应，也不行~ <br>
+![image](./Example/res/output/00.jpg) <br>
 
 ### 0. bool type
 ![image](./Example/res/output/e0_bool.jpg) <br>
