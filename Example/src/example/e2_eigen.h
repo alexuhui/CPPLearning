@@ -1,7 +1,11 @@
 #ifndef E2
 #define E2
 
+#include <Eigen/Core>
 #include "e_base.h"
+
+using namespace Eigen;
+using namespace std;
 
 class E2_eigen : public IEBase
 {
@@ -13,7 +17,6 @@ public:
 	const char* getName();
 
 private:
-	void testRef(int& ref);
-
+	bool doSegmentsIntersect(const Eigen::Vector2d& p1, const Eigen::Vector2d& p2, const Eigen::Vector2d& q1, const Eigen::Vector2d& q2);
 };
 #endif // E2
