@@ -5,10 +5,11 @@ using namespace std;
 
 #include "../example/e0_bool.h"
 #include "../example/e1_reference.h"
+#include "../example/e2_eigen.h"
 
 
 template <class T>
-int getArrayLen(T& array)
+unsigned int getArrayLen(T& array)
 {
 	//cout << "sizeof(array) : " << sizeof(array) << "  sizeof(array[0]) : " << sizeof(array[0]) << endl;
 	return (sizeof(array) / sizeof(array[0]));
@@ -22,8 +23,9 @@ int main()
 	IEBase* exObjs[] = {
 			 new E0_bool(),
 			 new E1_ref(),
+			 new E2_eigen(),
 	};
-	int len = getArrayLen(exObjs);
+	unsigned int len = getArrayLen(exObjs);
 	while (true)
 	{
 		printf("input number to run example (input -1 to show all example) : ");
@@ -59,7 +61,10 @@ int main()
 		}
 		cout << endl;
 	}
-
+	for (unsigned int i = 0; i < len; i++)
+	{
+		delete exObjs[i];
+	}
 
 	system("pause");
 }
