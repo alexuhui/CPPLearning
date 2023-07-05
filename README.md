@@ -5,7 +5,7 @@
 * [0. bool type](#0-bool-type) <br>
 * [1. reference](#1-reference) <br>
 * [2. eigen](#2-eigen) <br>
-* [2. eigen](#3-inline) <br>
+* [3. eigen](#3-inline) <br>
 
 * [plan](#plan) <br>
 
