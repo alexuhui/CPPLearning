@@ -44,6 +44,16 @@ C++的Eigen库是一个开源的线性代数库，它提供了丰富的功能用
 Eigen库广泛应用于科学计算、工程学、图像处理、机器学习等领域，因为这些领域经常需要进行大规模的线性代数运算，而Eigen提供了高效且易于使用的解决方案。<br>
 <br>
 
+### 3. inline
+将函数指定为内联函数（inline），通常就是将它在每个调用点上“内联地”展开。内联函数可避免函数调用的开销。内联说明只是向编译器发出的一个请求，编译器可以选择忽略这个请求。一般来说，内联机制用于优化规模较小、流程直接、频繁调用的函数。（c++ primer 第五版 6.5.2）<br>
+定义在类内部的函数是隐式的inline函数。（c++ primer 第五版 7.1.2）<br>
+这是一个取决于编译器的行为，测试结果可以看出，即使没有指定inline的函数，也可能被编译器展开。<br>
+Release版本默认开启优化，可从编译结果看出inline展开结果。Debug版本默认不开启优化，是不会展开的。<br>
+![debug 开启优化](./Example/res/output/e3_inline_0.jpg) <br>
+![debug 设置调试信息格式](./Example/res/output/e3_inline_1.jpg) <br>
+![未展开](./Example/res/output/e3_inline_2.jpg) <br>
+![展开](./Example/res/output/e3_inline_3.jpg) <br>
+
 
 <br>
 <br>

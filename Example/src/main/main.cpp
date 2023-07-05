@@ -6,6 +6,7 @@ using namespace std;
 #include "../example/e0_bool.h"
 #include "../example/e1_reference.h"
 #include "../example/e2_eigen.h"
+#include "../example/e3_inline.h"
 
 
 template <class T>
@@ -24,11 +25,12 @@ int main()
 			 new E0_bool(),
 			 new E1_ref(),
 			 new E2_eigen(),
+			 new E3_inline(),
 	};
 	unsigned int len = getArrayLen(exObjs);
 	while (true)
 	{
-		printf("input number to run example (input -1 to show all example) : ");
+		printf("input number to run example (input -1 to show all example) : \n");
 		cin >> str;
 
 		char first = str[0];
