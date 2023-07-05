@@ -5,6 +5,7 @@
 * [0. bool type](#0-bool-type) <br>
 * [1. reference](#1-reference) <br>
 * [2. eigen](#2-eigen) <br>
+* [2. eigen](#3-inline) <br>
 
 * [plan](#plan) <br>
 
@@ -49,9 +50,13 @@ Eigen库广泛应用于科学计算、工程学、图像处理、机器学习等
 定义在类内部的函数是隐式的inline函数。（c++ primer 第五版 7.1.2）<br>
 这是一个取决于编译器的行为，测试结果可以看出，即使没有指定inline的函数，也可能被编译器展开。<br>
 Release版本默认开启优化，可从编译结果看出inline展开结果。Debug版本默认不开启优化，是不会展开的。<br>
+debug 开启优化：<br>
 ![debug 开启优化](./Example/res/output/e3_inline_0.jpg) <br>
+debug 设置调试信息格式：<br>
 ![debug 设置调试信息格式](./Example/res/output/e3_inline_1.jpg) <br>
+未展开：<br>
 ![未展开](./Example/res/output/e3_inline_2.jpg) <br>
+展开：<br>
 ![展开](./Example/res/output/e3_inline_3.jpg) <br>
 
 
