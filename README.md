@@ -6,6 +6,7 @@
 * [1. reference](#1-reference) <br>
 * [2. eigen](#2-eigen) <br>
 * [3. inline](#3-inline) <br>
+* [4. 常量指针/指针常量](#4-Constant-Pointer-vs-Pointer-to-Constant) <br>
 
 * [plan](#plan) <br>
 
@@ -59,6 +60,10 @@ debug 设置调试信息格式：<br>
 展开：<br>
 ![展开](./Example/res/output/e3_inline_3.jpg) <br>
 
+### 4. Constant Pointer vs. Pointer to Constant
+常量指针/指针常量：<br>
+![说明](./Example/res/output/e4_const_pointer_1.jpg) <br>
+![输出](./Example/res/output/e4_const_pointer_2.jpg) <br>
 
 <br>
 <br>
