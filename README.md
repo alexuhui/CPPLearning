@@ -28,7 +28,7 @@ c++ bool 类型非0即1  0 为假 1 为真
 ![image](./Example/res/output/e1_ref_2.jpg) <br>
 引用与指针的区别：<br>
 1、引用访问一个变量是直接访问，而指针是间距访问；<br>
-2、引用底层实现和指针一样，都是保存了变量的地址，区别在于引用指定后不可修改（相当于“常量指针”），而指针可以修改（常量指针除外）；<br>
+2、引用底层实现和指针一样，都是保存了变量的地址，区别在于引用指定后不可修改（相当于“指针常量”），而指针可以修改（指针常量除外）；<br>
 3、声明引用必须初始化，一旦初始化就不能再引用其他变量，而指针可以（因为指针是变量）；<br>
 <br>
 
@@ -61,7 +61,7 @@ debug 设置调试信息格式：<br>
 ![展开](./Example/res/output/e3_inline_3.jpg) <br>
 
 ### 4. Constant Pointer vs. Pointer to Constant
-常量指针/指针常量：<br>
+指针常量（Constant Pointer）/常量指针（Pointer to Constant）：<br>
 ![说明](./Example/res/output/e4_const_pointer_1.jpg) <br>
 ![输出](./Example/res/output/e4_const_pointer_2.jpg) <br>
 
