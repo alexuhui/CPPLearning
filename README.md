@@ -6,7 +6,7 @@
 * [1. reference](#1-reference) <br>
 * [2. eigen](#2-eigen) <br>
 * [3. inline](#3-inline) <br>
-* [4. 常量指针/指针常量](#4-Constant-Pointer-vs-Pointer-to-Constant) <br>
+* [4. Constant Pointer vs. Pointer to Constant](#4-Constant-Pointer-vs-Pointer-to-Constant) <br>
 
 * [plan](#plan) <br>
 
