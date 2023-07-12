@@ -12,6 +12,7 @@ bool E1_ref::doExample()
 {
 	int a = 100;
 	int& b = a;
+	int* b_p = &a;
 	const int& c = b;
 	printf("a %d  b %d  c %d \n", a, b, c);
 	a = 200;

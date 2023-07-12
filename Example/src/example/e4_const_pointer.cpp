@@ -13,16 +13,18 @@ bool E4_const_pointer::doExample()
 	int a = 5;
 	int b = 6;
 
-	//指针是一个常量，其指向的内存地址是固定的，不能修改。
-	//但可以通过指针来修改指向的值。 
-	//(记法，指针在前常量在后：* const)
+	//指针常量（Constant Pointer）
+	//该常量是一个指针，其指向的内存地址是固定的，不能修改。
+	//但指针指向的值可以修改。 
+	//(记法，const 约束跟在它后面的对象：pc 即 pc 是一个常量)
 	int* const pc = &a;
 	//pc = &b; // error
 	*pc = 50;
 
-	//常量的指针，其指向的值是固定的，不能修改。
+	//常量指针（Pointer to Constant）
+	//指向常量的指针，其指向的值是固定的，不能修改。
 	//但可以将指针指向其他地址。
-	//(记法，常量在前指针在后：const type *)
+	//(记法，const 约束跟在它后面的对象：*cp 即 *pc 是一个常量)
 	const int* cp = &a;
 	cp = &b;
 	//*cp = 50; // error
