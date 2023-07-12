@@ -7,6 +7,7 @@ using namespace std;
 #include "../example/e1_reference.h"
 #include "../example/e2_eigen.h"
 #include "../example/e3_inline.h"
+#include "../example/e4_const_pointer.h"
 
 
 template <class T>
@@ -26,6 +27,7 @@ int main()
 			 new E1_ref(),
 			 new E2_eigen(),
 			 new E3_inline(),
+			 new E4_const_pointer(),
 	};
 	unsigned int len = getArrayLen(exObjs);
 	while (true)

@@ -39,6 +39,9 @@
     <ClCompile Include="src\example\e3_inline.cpp">
       <Filter>源文件\example</Filter>
     </ClCompile>
+    <ClCompile Include="src\example\e4_const_pointer.cpp">
+      <Filter>源文件\example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\example\e0_bool.h">
@@ -54,6 +57,9 @@
       <Filter>源文件\example</Filter>
     </ClInclude>
     <ClInclude Include="src\example\e3_inline.h">
+      <Filter>源文件\example</Filter>
+    </ClInclude>
+    <ClInclude Include="src\example\e4_const_pointer.h">
       <Filter>源文件\example</Filter>
     </ClInclude>
   </ItemGroup>

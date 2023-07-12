@@ -133,6 +133,7 @@
     <ClCompile Include="src\example\e1_reference.cpp" />
     <ClCompile Include="src\example\e2_eigen.cpp" />
     <ClCompile Include="src\example\e3_inline.cpp" />
+    <ClCompile Include="src\example\e4_const_pointer.cpp" />
     <ClCompile Include="src\example\e_base.cpp" />
     <ClCompile Include="src\main\main.cpp" />
   </ItemGroup>
@@ -141,6 +142,7 @@
     <ClInclude Include="src\example\e1_reference.h" />
     <ClInclude Include="src\example\e2_eigen.h" />
     <ClInclude Include="src\example\e3_inline.h" />
+    <ClInclude Include="src\example\e4_const_pointer.h" />
     <ClInclude Include="src\example\e_base.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
