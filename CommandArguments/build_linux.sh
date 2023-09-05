@@ -12,3 +12,5 @@ else
 fi
 
 cd $folder_path
+cmake ..
+make
