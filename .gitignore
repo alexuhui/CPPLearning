@@ -35,3 +35,7 @@
 *.out
 *.app
 x64
+
+#build
+/build
+*/build
