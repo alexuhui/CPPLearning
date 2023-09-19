@@ -20,15 +20,15 @@ cd 到exmXX_XX 目录下，执行../run.bat 即可 <br>
 
 
 ### 0. bool type
-![image](./res/output/e0_bool.jpg) <br>
+![image](./exm0_bool/e0_bool.jpg) <br>
 c++ bool 类型非0即1  0 为假 1 为真 
 <br>
 
 ### 1. reference
 引用是变量的别名，实际指向的是同一变量；<br>
 这里比较有趣的是，声明为const的变量引用，引用本身不能修改，但引用指向的值会随原变量改变<br>
-![image](./res/output/e1_ref_1.jpg) <br>
-![image](./res/output/e1_ref_2.jpg) <br>
+![image](./exm1_reference/e1_ref_1.jpg) <br>
+![image](./exm1_reference/e1_ref_2.jpg) <br>
 引用与指针的区别：<br>
 1、引用访问一个变量是直接访问，而指针是间距访问；<br>
 2、引用底层实现和指针一样，都是保存了变量的地址，区别在于引用指定后不可修改（相当于“指针常量”），而指针可以修改（指针常量除外）；<br>
@@ -56,18 +56,18 @@ Eigen库广泛应用于科学计算、工程学、图像处理、机器学习等
 这是一个取决于编译器的行为，测试结果可以看出，即使没有指定inline的函数，也可能被编译器展开。<br>
 Release版本默认开启优化，可从编译结果看出inline展开结果。Debug版本默认不开启优化，是不会展开的。<br>
 debug 开启优化：<br>
-![debug 开启优化](./res/output/e3_inline_0.jpg) <br>
+![debug 开启优化](./exm3_inline/e3_inline_0.jpg) <br>
 debug 设置调试信息格式：<br>
-![debug 设置调试信息格式](./res/output/e3_inline_1.jpg) <br>
+![debug 设置调试信息格式](./exm3_inline/e3_inline_1.jpg) <br>
 未展开：<br>
-![未展开](./res/output/e3_inline_2.jpg) <br>
+![未展开](./exm3_inline/e3_inline_2.jpg) <br>
 展开：<br>
-![展开](./res/output/e3_inline_3.jpg) <br>
+![展开](./exm3_inline/e3_inline_3.jpg) <br>
 
 ### 4. Constant Pointer vs. Pointer to Constant
 指针常量（Constant Pointer）/常量指针（Pointer to Constant）：<br>
-![说明](./res/output/e4_const_pointer_1.jpg) <br>
-![输出](./res/output/e4_const_pointer_2.jpg) <br>
+![说明](./exm4_const_pointer/e4_const_pointer_1.jpg) <br>
+![输出](./exm4_const_pointer/e4_const_pointer_2.jpg) <br>
 
 <br>
 <br>
