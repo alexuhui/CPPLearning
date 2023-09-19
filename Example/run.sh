@@ -11,11 +11,11 @@ fi
 
 rm -rf $folder_path/*
 
-# if [ -d "./include" ]; then 
-    gcc -o ./build/app main.cpp -I./include/eigen-3.4.0/
-# else
-#     gcc -o ./build/app main.cpp
-# fi
+if [ -d "./include" ]; then 
+    g++ -I include -o ./build/app main.cpp
+else
+    g++ -o ./build/app main.cpp
+fi
 
 cd $folder_path
  ./app
